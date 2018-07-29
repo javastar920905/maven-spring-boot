@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
     @Reference(version = "${demo.service.version}",
             application = "${dubbo.application.id}",
-            url = "dubbo://localhost:12345")
+            registry = "dubbo://localhost:20880")
     private UserService userService;
 
     @GetMapping("/")

@@ -20,7 +20,7 @@ public class Application implements CommandLineRunner {
     private UserMapper userMapper;
 
     public static void main(String[] args) throws Exception {
-        new SpringApplicationBuilder(UserServiceImpl.class).web(false).run(args);
+        new SpringApplicationBuilder(Application.class).web(false).run(args);
         //ConfigurableApplicationContext ctx = SpringApplication.run(Application.class, args);
 //        UserMapper userMapper = ctx.getBean(UserMapper.class);
 //        System.out.println(userMapper.findList().size());

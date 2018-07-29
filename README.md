@@ -54,3 +54,6 @@
 [dubbo spring boot 教程](https://github.com/apache/incubator-dubbo-spring-boot-project/blob/master/README_CN.md)
 [dubbo_官方教程_中文](http://dubbo.incubator.apache.org/#!/?lang=zh-cn)
 dubbo测试未成功，没有部署zookeeper测试
+
+# 控制台管理安装 
+[参考文档](http://dubbo.incubator.apache.org/#!/docs/admin/install/admin-console.md?lang=zh-cn)
