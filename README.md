@@ -52,5 +52,5 @@
 # 集成dubbo 
 [dubbo 个人总结](http://note.youdao.com/noteshare?id=a848648305c19df482669a58f76bdd77)
 [dubbo spring boot 教程](https://github.com/apache/incubator-dubbo-spring-boot-project/blob/master/README_CN.md)
-
+[dubbo_官方教程_中文](http://dubbo.incubator.apache.org/#!/?lang=zh-cn)
 dubbo测试未成功，没有部署zookeeper测试
