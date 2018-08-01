@@ -10,13 +10,14 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class IndexController {
-    @Reference(version = "${demo.service.version}",
-            application = "${dubbo.application.id}",
-            registry = "dubbo://localhost:20880")
+    /* @Reference(version = "${demo.service.version}",
+             application = "${dubbo.application.id}",
+             registry = "dubbo://localhost:20880")*/
+    @Reference
     private UserService userService;
 
     @GetMapping("/")
     public String sayHello() {
-        return userService.findList().size()+" size  from javastar920905.controller.IndexController";
+        return userService.findList().size() + " size  from javastar920905.controller.IndexController";
     }
 }

@@ -2,10 +2,12 @@ package javastar920905.entity;
 
 import jdk.nashorn.internal.objects.annotations.Getter;
 
+import java.io.Serializable;
+
 /**
  * @author ouzhx  on ${date}
  */
-public class User {
+public class User implements Serializable {
     private String id;
 
     private String name;

@@ -10,12 +10,14 @@ import java.util.List;
 /**
  * @author ouzhx  on ${date}
  */
-@Service(
+/*@Service(
         version = "${demo.service.version}",
-        application = "${dubbo.application.id}",
-        protocol = "${dubbo.protocol.id}",
-        registry = "${dubbo.registry.id}"
-)
+        application = "${spring.dubbo.application.id}",
+        protocol = "${spring.dubbo.protocol.id}",
+        registry = "${spring.dubbo.registry.id}"
+)*/
+
+@Service
 public class UserServiceImpl implements UserService {
     public List<User> findList() {
         List<User> users = new ArrayList<User>();
