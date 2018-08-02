@@ -34,7 +34,7 @@
 [spring boot mybatis参考文档](http://note.youdao.com/noteshare?id=a4ae45c118dee63658e4a4a1e85bf0a9&sub=5B30651D819F4247991158D475F94D23)
 这里有个问题，spring boot 文档基本都是提及简单配置spring-boot-start-parent
 
-这里需要换成 <dependencyManagement>方式
+这里需要换成 <dependencyManagement>方式,配置在父pom
 -- 
     <!--spring boot 依赖管理版本，当前版本配置druid 连接时，会报错找不到相关类 -->
     <dependencyManagement>
@@ -53,7 +53,12 @@
 [dubbo 个人总结](http://note.youdao.com/noteshare?id=a848648305c19df482669a58f76bdd77)
 [dubbo spring boot 教程](https://github.com/apache/incubator-dubbo-spring-boot-project/blob/master/README_CN.md)
 [dubbo_官方教程_中文](http://dubbo.incubator.apache.org/#!/?lang=zh-cn)
-dubbo测试未成功，没有部署zookeeper测试
+
 
 # 控制台管理安装 
 [参考文档](http://dubbo.incubator.apache.org/#!/docs/admin/install/admin-console.md?lang=zh-cn)
+[个人实践总结-测试通过](https://share.weiyun.com/5k4OqmP)
+
+# 问题总结
+测试中遇到一个问题, 连接不到zookeeper
+原因: 使用阿里云服务器,没有配置安全组,开放端口2181 以及dubbo-admin 看tomcat设置一般为8080,建议改为其他
